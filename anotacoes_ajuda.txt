@@ -1,0 +1,19 @@
+Recursos da próxima aula
+Nessa nova versão 15, quando é criado um componente o angular deixa ele mais limpo.
+No caso quando eu crio o componente ele vem com constructor e ngOnInit.
+
+Na versão 15 vem sem, porém não vai te atrapalhar no aprendizado.
+Basta aplicar em seu código, exp.:
+
+import { Component, OnInit } from '@angular/core';
+ 
+@Component({
+ selector: 'app-home',
+ templateUrl: './home.component.html',
+ styleUrls: ['./home.component.scss'],
+})
+ 
+export class HomeComponent implements OnInit {
+  constructor() {}
+  ngOnInit() {}
+}
